@@ -4,166 +4,87 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Статьи — Михаил Макаров</title>
-<meta name="description" content="Практические статьи о стратегических коммуникациях, работе со СМИ, антикризисном PR, госструктурах в социальных сетях и предпринимательстве.">
+<meta name="description" content="Практические статьи о стратегических коммуникациях, работе со СМИ, антикризисном PR и госструктурах в социальных сетях. Михаил Макаров.">
 <link rel="canonical" href="https://makarovmedia.github.io/mm/articles.html">
-<meta property="og:title" content="Статьи — Михаил Макаров">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://makarovmedia.github.io/mm/articles.html">
+<meta property="og:title" content="Статьи — Михаил Макаров">
+<meta property="og:description" content="Практические статьи о стратегических коммуникациях, работе со СМИ, антикризисном PR и госструктурах в социальных сетях.">
 <meta property="og:image" content="https://makarovmedia.github.io/mm/img/og-image.jpg">
+<meta property="og:url" content="https://makarovmedia.github.io/mm/articles.html">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="site-header">
-  <div class="bar">
-    <a class="logo" href="index.html">Михаил Макаров</a>
-    <button class="nav-toggle" aria-label="Открыть меню" aria-expanded="false" onclick="document.querySelector('.site-header nav').classList.toggle('open'); this.setAttribute('aria-expanded', this.getAttribute('aria-expanded')!=='true')">☰</button>
-    <nav>
+<nav class="site-nav">
+  <div class="container">
+    <a href="index.html" class="brand">Михаил Макаров</a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Открыть меню">Меню</button>
+    <div class="links">
+      <a href="articles.html" class="current">Статьи</a>
       <a href="about.html">Обо мне</a>
-      <a href="metod.html">Метод</a>
-      <a href="cases.html">Кейсы</a>
-      <a href="articles.html" aria-current="page">Статьи</a>
-      <a href="media.html">СМИ обо мне</a>
       <a href="contacts.html">Контакты</a>
-    </nav>
+    </div>
+  </div>
+</nav>
+
+<header class="about-hero">
+  <div class="container">
+    <p class="eyebrow">Публикации</p>
+    <h1>Статьи</h1>
   </div>
 </header>
 
-<main>
+<section class="block articles-index">
+  <div class="container">
+    <div class="article-list">
 
-  <section class="tight">
-    <div class="wrap-wide">
-      <span class="eyebrow">Публикации</span>
-      <h1>Статьи</h1>
+      <a class="article-preview" href="articles/reputation.html">
+        <p class="eyebrow">Антикризисные коммуникации</p>
+        <h3>Как противостоять негативным вбросам против вашей организации или первого лица?</h3>
+        <p>Кто в зоне риска, как себя уберечь заранее и что делать в первые минуты после того, как негатив уже вброшен.</p>
+        <span class="read-more">Читать →</span>
+      </a>
+
+      <a class="article-preview" href="articles/account.html">
+        <p class="eyebrow">Соцсети</p>
+        <h3>Оформляем аккаунт чиновника правильно</h3>
+        <p>Что должно быть в личном аккаунте чиновника, чего быть не должно ни в коем случае, примеры и антипримеры.</p>
+        <span class="read-more">Читать →</span>
+      </a>
+
+      <a class="article-preview" href="articles/subscribers.html">
+        <p class="eyebrow">Соцсети</p>
+        <h3>Как начать привлекать новых подписчиков на официальные страницы госструктуры</h3>
+        <p>Какие есть способы привлечения аудитории и почему массфолловинг и масслайкинг — это зло.</p>
+        <span class="read-more">Читать →</span>
+      </a>
+
+      <a class="article-preview" href="articles/press-conference.html">
+        <p class="eyebrow">Работа со СМИ</p>
+        <h3>Организуем пресс-конференцию для госструктуры</h3>
+        <p>Пошаговая инструкция о том, как организовать пресс-конференцию, которая соберёт больше журналистов, — с собственными кейсами.</p>
+        <span class="read-more">Читать →</span>
+      </a>
+
     </div>
-  </section>
-
-  <section class="tight">
-    <div class="wrap-wide">
-      <nav class="article-filter" aria-label="Фильтр статей по теме">
-        <button type="button" class="active" data-filter="all">Все</button>
-        <button type="button" data-filter="gos">Госкоммуникации</button>
-        <button type="button" data-filter="biz">Бизнес и репутация</button>
-        <button type="button" data-filter="method">Метод</button>
-      </nav>
-
-      <div class="article-grid" id="article-grid">
-
-        <a class="article-card" data-tags="gos" href="articles/reputation.html">
-          <span class="tag">Антикризисные коммуникации</span>
-          <h3>Как противостоять негативным вбросам</h3>
-          <p>Кто в зоне риска, как себя уберечь заранее и что делать в первые минуты после того, как негатив уже вброшен.</p>
-          <span class="read-more">Читать →</span>
-        </a>
-
-        <a class="article-card" data-tags="gos" href="articles/account.html">
-          <span class="tag">Соцсети</span>
-          <h3>Оформляем аккаунт чиновника правильно</h3>
-          <p>Что должно быть в личном аккаунте чиновника, чего быть не должно ни в коем случае, примеры и антипримеры.</p>
-          <span class="read-more">Читать →</span>
-        </a>
-
-        <a class="article-card" data-tags="gos" href="articles/subscribers.html">
-          <span class="tag">Соцсети</span>
-          <h3>Привлекаем подписчиков на страницы госструктуры</h3>
-          <p>Какие есть способы привлечения аудитории и почему массфолловинг и масслайкинг — это зло.</p>
-          <span class="read-more">Читать →</span>
-        </a>
-
-        <a class="article-card" data-tags="gos" href="articles/press-conference.html">
-          <span class="tag">Работа со СМИ</span>
-          <h3>Организуем пресс-конференцию для госструктуры</h3>
-          <p>Пошаговая инструкция о том, как организовать пресс-конференцию, которая соберёт больше журналистов.</p>
-          <span class="read-more">Читать →</span>
-        </a>
-
-        <!-- Новые статьи (архив 2015–2017) -->
-
-        <a class="article-card" data-tags="biz method" href="articles/startup-vs-biznes.html">
-          <span class="tag">Бизнес и репутация</span>
-          <h3>Открывайте бизнес, а не стартап!</h3>
-          <p>Чёткое разграничение понятий, показывает системное мышление.</p>
-          <span class="read-more">Читать →</span>
-        </a>
-
-        <a class="article-card" data-tags="biz" href="articles/reklama-belyj-shum.html">
-          <span class="tag">Бизнес и репутация</span>
-          <h3>Реклама и «белый шум»</h3>
-          <p>Про эффект привыкания аудитории к рекламе и роль живых форматов коммуникации.</p>
-          <span class="read-more">Читать →</span>
-        </a>
-
-        <a class="article-card" data-tags="biz method" href="articles/peregovory.html">
-          <span class="tag">Метод</span>
-          <h3>Переговоры: три стадии</h3>
-          <p>Подготовка → анализ оппонента → стратегии ведения.</p>
-          <span class="read-more">Читать →</span>
-        </a>
-
-        <a class="article-card" data-tags="biz" href="articles/biznes-v-krizis.html">
-          <span class="tag">Бизнес и репутация</span>
-          <h3>Какой бизнес открывать в кризис?</h3>
-          <p>Парадоксальный заход, разворот мысли, актуально всегда.</p>
-          <span class="read-more">Читать →</span>
-        </a>
-
-        <a class="article-card" data-tags="biz gos" href="articles/vysshee-obrazovanie.html">
-          <span class="tag">Госкоммуникации</span>
-          <h3>Нужно ли высшее образование для высокой зарплаты?</h3>
-          <p>Взвешенный разбор разрыва между образованием и рынком труда.</p>
-          <span class="read-more">Читать →</span>
-        </a>
-
-        <a class="article-card" data-tags="biz method" href="articles/lovushki-opyta.html">
-          <span class="tag">Метод</span>
-          <h3>Ловушки прошлого опыта</h3>
-          <p>Про то, как успешный опыт ослепляет перед новыми конкурентами.</p>
-          <span class="read-more">Читать →</span>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="tight">
-    <div class="wrap-wide">
-      <p class="muted">Часть материалов впервые опубликована в журнале «Связи с общественностью в государственных структурах», 2021.</p>
-    </div>
-  </section>
-
-</main>
+    <p style="font-family:var(--mono);font-size:13px;color:var(--muted);margin-top:30px;">Журнал «Связи с общественностью в государственных структурах», 2021</p>
+  </div>
+</section>
 
 <footer class="site-footer">
-  <div class="bar">
-    <span>© Михаил Макаров</span>
-    <nav>
+  <div class="container">
+    <p>© Михаил Макаров</p>
+    <div class="links">
       <a href="about.html">Обо мне</a>
-      <a href="metod.html">Метод</a>
-      <a href="cases.html">Кейсы</a>
       <a href="articles.html">Статьи</a>
-      <a href="media.html">СМИ обо мне</a>
       <a href="contacts.html">Контакты</a>
-    </nav>
+      <a href="mailto:mm.online@mail.ru">mm.online@mail.ru</a>
+    </div>
   </div>
 </footer>
 
-<script>
-  // Простой фильтр статей по тегам (без зависимостей)
-  document.querySelectorAll('.article-filter button').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      document.querySelectorAll('.article-filter button').forEach(function (b) { b.classList.remove('active'); });
-      btn.classList.add('active');
-      var filter = btn.getAttribute('data-filter');
-      document.querySelectorAll('#article-grid .article-card').forEach(function (card) {
-        var tags = (card.getAttribute('data-tags') || '').split(' ');
-        card.style.display = (filter === 'all' || tags.indexOf(filter) !== -1) ? '' : 'none';
-      });
-    });
-  });
-</script>
-
+<script src="js/script.js"></script>
 </body>
 </html>
